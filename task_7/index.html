@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 7</title>
+</head>
+<body>
+<ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+
+<button id="addButton">Add New Item</button>
+</body>
+</html>
+
+<script>
+    const btn = document.getElementById('addButton');
+    const list = document.getElementById('myList');
+
+    const buttonClick = () => {
+        const li = document.createElement("li");
+        li.textContent = "New Item";
+        list.appendChild(li);
+    };
+
+    btn.addEventListener('click', buttonClick)
+
+</script>
