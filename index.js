@@ -39,3 +39,8 @@ console.log(countOccurrences([1, 2, 3, 2, 2], 2))
 const objectToArray = (obj) =>  Object.entries(obj);
 
 console.log(objectToArray({city: 'New York', country: 'USA'}))
+
+//Task 6
+const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
+
+console.log(mergeObjects({a: 1, b: 5}, {a:-1, b: 1, c: 4}))
