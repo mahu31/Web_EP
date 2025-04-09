@@ -34,3 +34,8 @@ const countOccurrences = (arr, value) => {
 };
 
 console.log(countOccurrences([1, 2, 3, 2, 2], 2))
+
+// Task 5
+const objectToArray = (obj) =>  Object.entries(obj);
+
+console.log(objectToArray({city: 'New York', country: 'USA'}))
